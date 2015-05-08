@@ -13,6 +13,11 @@
 		B2891E381AFCBA03009BA391 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2891E371AFCBA03009BA391 /* Images.xcassets */; };
 		B2891E3B1AFCBA03009BA391 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2891E391AFCBA03009BA391 /* LaunchScreen.xib */; };
 		B2891E471AFCBA03009BA391 /* RowyGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E461AFCBA03009BA391 /* RowyGeneratorTests.swift */; };
+		B2891E521AFCBA1E009BA391 /* RowyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E511AFCBA1E009BA391 /* RowyGenerator.swift */; };
+		B2891E551AFCBB46009BA391 /* CEMKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E541AFCBB46009BA391 /* CEMKit.swift */; };
+		B2891E5E1AFCE24A009BA391 /* UIControlEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E5D1AFCE24A009BA391 /* UIControlEventHandler.swift */; };
+		B2891E601AFCE2C6009BA391 /* UIGestureRecognizerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E5F1AFCE2C6009BA391 /* UIGestureRecognizerHandler.swift */; };
+		B2891E621AFCE4B6009BA391 /* StyledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2891E611AFCE4B6009BA391 /* StyledView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		B2891E401AFCBA03009BA391 /* RowyGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RowyGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2891E451AFCBA03009BA391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2891E461AFCBA03009BA391 /* RowyGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowyGeneratorTests.swift; sourceTree = "<group>"; };
+		B2891E511AFCBA1E009BA391 /* RowyGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowyGenerator.swift; sourceTree = "<group>"; };
+		B2891E541AFCBB46009BA391 /* CEMKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CEMKit.swift; sourceTree = "<group>"; };
+		B2891E5D1AFCE24A009BA391 /* UIControlEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlEventHandler.swift; sourceTree = "<group>"; };
+		B2891E5F1AFCE2C6009BA391 /* UIGestureRecognizerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerHandler.swift; sourceTree = "<group>"; };
+		B2891E611AFCE4B6009BA391 /* StyledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +87,9 @@
 		B2891E2D1AFCBA03009BA391 /* RowyGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				B2891E301AFCBA03009BA391 /* AppDelegate.swift */,
+				B2891E531AFCBB46009BA391 /* CEMKit */,
+				B2891E501AFCBA14009BA391 /* RowyGenerator */,
 				B2891E321AFCBA03009BA391 /* ViewController.swift */,
-				B2891E341AFCBA03009BA391 /* Main.storyboard */,
-				B2891E371AFCBA03009BA391 /* Images.xcassets */,
-				B2891E391AFCBA03009BA391 /* LaunchScreen.xib */,
 				B2891E2E1AFCBA03009BA391 /* Supporting Files */,
 			);
 			path = RowyGenerator;
@@ -90,6 +98,10 @@
 		B2891E2E1AFCBA03009BA391 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2891E301AFCBA03009BA391 /* AppDelegate.swift */,
+				B2891E341AFCBA03009BA391 /* Main.storyboard */,
+				B2891E371AFCBA03009BA391 /* Images.xcassets */,
+				B2891E391AFCBA03009BA391 /* LaunchScreen.xib */,
 				B2891E2F1AFCBA03009BA391 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +122,25 @@
 				B2891E451AFCBA03009BA391 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2891E501AFCBA14009BA391 /* RowyGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				B2891E511AFCBA1E009BA391 /* RowyGenerator.swift */,
+				B2891E611AFCE4B6009BA391 /* StyledView.swift */,
+				B2891E5D1AFCE24A009BA391 /* UIControlEventHandler.swift */,
+				B2891E5F1AFCE2C6009BA391 /* UIGestureRecognizerHandler.swift */,
+			);
+			path = RowyGenerator;
+			sourceTree = "<group>";
+		};
+		B2891E531AFCBB46009BA391 /* CEMKit */ = {
+			isa = PBXGroup;
+			children = (
+				B2891E541AFCBB46009BA391 /* CEMKit.swift */,
+			);
+			path = CEMKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2891E5E1AFCE24A009BA391 /* UIControlEventHandler.swift in Sources */,
+				B2891E551AFCBB46009BA391 /* CEMKit.swift in Sources */,
+				B2891E621AFCE4B6009BA391 /* StyledView.swift in Sources */,
 				B2891E331AFCBA03009BA391 /* ViewController.swift in Sources */,
 				B2891E311AFCBA03009BA391 /* AppDelegate.swift in Sources */,
+				B2891E601AFCE2C6009BA391 /* UIGestureRecognizerHandler.swift in Sources */,
+				B2891E521AFCBA1E009BA391 /* RowyGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +447,7 @@
 				B2891E4C1AFCBA03009BA391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2891E4D1AFCBA03009BA391 /* Build configuration list for PBXNativeTarget "RowyGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +456,7 @@
 				B2891E4F1AFCBA03009BA391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
